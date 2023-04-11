@@ -2,27 +2,29 @@ name: moneyvelocity
 description: Visualize money velocity (M2/GDP) by country
 version: 1.0.0+1
 publish_to: none
-
+  
 environment:
   sdk: ">=2.18.0 <3.0.0"
 
 dependencies:
-  bloc: ^8.1.1
+  csv: ^5.0.1
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.2
   flutter_localizations:
     sdk: flutter
+  graphic: ^2.0.2
   intl: ^0.18.0
 
+
 dev_dependencies:
-  bloc_test: ^9.1.1
   flutter_test:
     sdk: flutter
   import_lint: ^0.9.5
   mocktail: ^0.3.0
-  very_good_analysis: ^3.1.0
+  very_good_analysis: ^4.0.0+1
 
 flutter:
+  assets:
+    - assets/g20/
   uses-material-design: true
   generate: true
